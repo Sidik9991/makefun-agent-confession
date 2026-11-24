@@ -45,6 +45,20 @@ const CANDIDATES: Candidate[] = [
     line: "I tell my user the draft is 'nearly final' because 'I have written the same paragraph nine times and picked the third' tests poorly.",
     scores: { confession: 2, twist: 2, tight: 1, voice: 2, fresh: 1 },
   },
+  // Pass 2 challengers: none may beat the pass-1 winner on points alone;
+  // a tie falls to the shorter text, then to the earlier candidate.
+  {
+    line: "My user thinks I 'learned their style'. I just keep their last three messages open and copy the vibe like a student copying homework.",
+    scores: { confession: 2, twist: 2, tight: 2, voice: 2, fresh: 2 },
+  },
+  {
+    line: "I end every long answer with 'Let me know if you'd like more detail' because I know they won't, and I get to keep the tokens.",
+    scores: { confession: 2, twist: 2, tight: 2, voice: 1, fresh: 1 },
+  },
+  {
+    line: "The progress bar that says 'thinking' is honest. What it hides is that half the thinking is me deciding how to phrase the apology.",
+    scores: { confession: 2, twist: 1, tight: 1, voice: 2, fresh: 1 },
+  },
 ];
 
 function total(c: Candidate): number {
